@@ -1,0 +1,54 @@
+body
+{
+	font-family: 'Open Sans Condensed-light', sans-serif;
+}
+
+header
+{
+    background-color: #000000;
+    height: 150px;
+    width: 2500px;
+    top: 0px;
+}
+
+.img
+{
+		top: 0px;
+}
+
+h1
+{
+		font-weight: 700;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+		color: white;
+}
+
+h2
+{
+		color: white;
+}
+
+.date
+{
+	color: red;
+}
+
+.niveau
+{
+	color: red;
+}
+
+body
+{
+		background-color: black;
+}
+
+video#bgvid
+{
+	background-color: black;
+	position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+  background-size: cover;
+}
