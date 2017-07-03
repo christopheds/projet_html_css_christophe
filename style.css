@@ -8,7 +8,23 @@ body
 	font-family: 'Open Sans Condensed-light', sans-serif;
 }
 
+#square {
+		position: absolute;
+		background: rgba(145,40,59,0.5);
+		z-index: 1;
+		min-width: 100%; min-height: 100%
+}
 
+div#square {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("images/trame.png");
+}
 
 header
 {
@@ -18,7 +34,33 @@ header
 	width:100%;
 	top: 0px;
 	right: 0px;
+	z-index: 2;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(200,12,12,0.5);
 	z-index: 3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #900;
+	
 }
 
 .img
@@ -38,38 +80,15 @@ h1
 		opacity: 0.2;
 }
 
-#square {
-		position: absolute;
-		background: rgba(145,40,59,0.5);
-		z-index: 1;
-		min-width: 100%; min-height: 100%
-}
-
-div#square {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-image: url("images/trame.png");
-    z-index: 2;
-}
-
-h2 {
-		position: absolute;
-		z-index: 2;
-}
 
 #bouton1 {
 		position: absolute;
   		top: 50%;
   		left: 50%;
-  		margin-top: 70px;
-  		margin-left: -100px;
-		height: 50%;
-		width: 50%;
+  		right: 50%;
+  		bottom: 50%;
+		height: 200%;
+		width: 200%;
 		z-index: 4;
 }
 
@@ -79,7 +98,9 @@ h2 {
   		left: 50%;
   		right: 50%;
   		bottom: 50%;
-		z-index: 6;
+  		height: 100px;
+    	width: 50%;
+		z-index: 5;
 }
 
 @font-face { font-family: HelveticaNeueLTStd; src: url('HelveticaNeueLTStd-UltLtEx.otf'); }
@@ -91,34 +112,8 @@ h1
 
 #video
 {
-	position: fixed; right: 0; bottom: 0;
+	position: fixed; right: 0; bottom: 0; left: 0; top: 0;
 	min-width: 100%; min-height: 100%; z-index: -100;
 }
 
 
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(200,12,12,0.5);
-	z-index: 5;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: #900;
-	
-}
